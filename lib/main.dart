@@ -1,9 +1,18 @@
 import 'package:flutter/material.dart';
-void main(){
-  runApp(lol());
+
+void main() {
+  runApp(BaseApp());
 }
-  class lol extends StatelessWidget{
-    Widget build(BuildContext context){
-      return MaterialApp(home: Text('hello'));
-    }
+
+class BaseApp extends StatelessWidget {
+    questions = ['which is your favorite color ?'];
+    Widget build(BuildContext context) {
+    return MaterialApp(
+      home: Scaffold(
+          appBar: AppBar(
+            title: Text('welcome to my app'),
+          ),
+          body: Column(children: [],)),
+    );
   }
+}
